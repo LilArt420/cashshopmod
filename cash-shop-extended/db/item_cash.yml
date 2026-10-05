@@ -13,190 +13,427 @@ Header:
   Version: 1
 
 Body:
-  # roBrowser currently assigns sparse server categories to the wrong visible
-  # tabs. Keep the complete mod catalog in one category so no client patch or
-  # second mod is required.
-  - Tab: New
+  # One entry per tab. The tab names are the server's; the client shows them as:
+  #   New = New, Hot = Popular, Limited = Limited Sale,
+  #   Rental = Rental Equipment, Permanent = Permanent Equipment,
+  #   Scrolls = Scrolls, Consumables = Consumables, Other = Other,
+  #   Sale = Account Limited (the server's sales tab).
+  # A name the server does not know ("Popular") skips the whole tab.
+  # Items in tabs other than New need Ragnarok Offline 1.5.0 or newer; older
+  # clients showed every tab after an empty one with the wrong items.
+  - Tab: New    # costumes
     Items:
-      - Item: Blessing_10_Scroll
-        Price: 5
-      - Item: Inc_Agi_10_Scroll
-        Price: 5
-      - Item: Aspersio_5_Scroll
-        Price: 5
-      - Item: Assumptio_5_Scroll
-        Price: 10
-      - Item: Wind_Walk_10_Scroll
-        Price: 10
-      - Item: Adrenaline_Scroll
-        Price: 10
-      - Item: Vermilion_10_Scroll
-        Price: 10
-      - Item: Storm_10_Scroll
-        Price: 10
-      - Item: Meteor_10_Scroll
-        Price: 10
-      - Item: Guarana_Candy
-        Price: 1
-      - Item: HP_Increase_PotionL
-        Price: 3
-      - Item: SP_Increase_PotionL
-        Price: 3
-      - Item: 24_S_Ev_Juice
-        Price: 5
-      - Item: E_All_In_One_Buff
-        Price: 5
-      - Item: G_Limit_Power_Booster
-        Price: 5
-      - Item: Yggdrasil_Seed_Box
-        Price: 25
-      - Item: Abrasive
-        Price: 5
-      - Item: Iggdrasilberry_Box
-        Price: 50
-      - Item: Elemental_Fire
-        Price: 5
-      - Item: Gold
-        Price: 15
-      - Item: Elemental_Earth
-        Price: 5
-      - Item: Gold_Bullion
-        Price: 30
-      - Item: MVP_Hunt_Box
-        Price: 25
-      - Item: Emperium
-        Price: 50
-      - Item: Elemental_Water
-        Price: 5
-      - Item: Emperium_Anvil
-        Price: 60
-      - Item: Elemental_Wind
-        Price: 5
-      - Item: Recall_MaleGM
-        Price: 5
-      - Item: Scaraba_Scroll
-        Price: 15
-      - Item: Max_Weight_Up_Scroll
-        Price: 15
-      - Item: Battle_Manual_X3
-        Price: 25
-      - Item: HE_Bubble_Gum
-        Price: 15
-      - Item: Boarding_Halter
-        Price: 50
-      - Item: C_Wing_Of_Fly
-        Price: 1
-      - Item: Runstone_Lux
-        Price: 15
-      - Item: EXPUP_Potion1Box
-        Price: 50
-      - Item: Etel_Topaz
-        Price: 1
-      - Item: Etel_Amber
-        Price: 1
-      - Item: Etel_Violet_Jewel
-        Price: 1
-      - Item: Etel_Skyblue_Jewel
-        Price: 1
-      - Item: Blessed_Etel_Dust
-        Price: 1
-      - Item: HD_Etel_Carnium
-        Price: 1
-      - Item: HD_Etherdeocon
-        Price: 1
-      - Item: HD_Ethernium
-        Price: 1
-      - Item: HD_Etel_Bradium
-        Price: 1
-      - Item: Enriched_Ethernium
-        Price: 1
-      - Item: F_HD_Bradium_Box10
-        Price: 1
-      - Item: Enriched_Etherdeocon
-        Price: 3
-      - Item: HD_Elunium_50Box
-        Price: 5
-      - Item: Blacksmith_Blessing
-        Price: 5
-      - Item: HD_Oridecon_50Box
-        Price: 3
-      - Item: F_Enriched_Elunium_Box
-        Price: 5
-      - Item: F_HD_Carnium_Box10
-        Price: 5
-      - Item: F_Enriched_Oridecon_Box
-        Price: 1
-      - Item: Guarantee_Armor_7Up
-        Price: 100
-      - Item: Guarantee_Armor_8Up
+      - Item: C_Rune_Helm
         Price: 150
-      - Item: Guarantee_Armor_9Up
-        Price: 200
-      - Item: Guarantee_Armor_10Up
-        Price: 300
-      - Item: Guarantee_Armor_11Up
-        Price: 450
-      - Item: Guarantee_Armor_12Up
-        Price: 600
-      - Item: Guarantee_Armor_13Up
-        Price: 800
-      - Item: Guarantee_Armor_14Up
-        Price: 1000
-      - Item: Guarantee_Armor_15Up
-        Price: 1500
-      - Item: Guarantee_Weapon_7Up
-        Price: 100
-      - Item: Guarantee_Weapon_8Up
+      - Item: C_Lord_of_Death
         Price: 150
-      - Item: Guarantee_Weapon_9Up
-        Price: 200
-      - Item: Guarantee_Weapon_10Up
-        Price: 300
-      - Item: Guarantee_Weapon_11Up
-        Price: 450
-      - Item: Guarantee_Weapon_12Up
-        Price: 600
-      - Item: Guarantee_Weapon_13Up
-        Price: 800
-      - Item: Guarantee_Weapon_14Up
-        Price: 1000
-      - Item: Guarantee_Weapon_15Up
+      - Item: C_Flying_Angel
+        Price: 150
+      - Item: C_White_Wizardry_Hat
+        Price: 150
+      - Item: C_White_Boys_Hat
+        Price: 150
+      - Item: C_Helm_Of_Angel
+        Price: 150
+      - Item: C_VesperHeadGear_J
+        Price: 150
+      - Item: C_Happy_Summer_Wig
+        Price: 150
+      - Item: C_Black_Strong_Hair
+        Price: 150
+      - Item: C_Red_Strong_Hair
+        Price: 150
+      - Item: C_Blue_Strong_Hair
+        Price: 150
+      - Item: C_Hair_Of_The_Strong
+        Price: 150
+      - Item: C_Priest_Hat_J
+        Price: 150
+      - Item: C_White_Strong_Hair
+        Price: 150
+      - Item: C_Pink_Angel_Hairband
+        Price: 150
+      - Item: C_Bldy_Light_Dark_Crown
+        Price: 150
+      - Item: C_Reliance_Crown
+        Price: 150
+      - Item: C_Helm_Of_Sun
+        Price: 150
+      - Item: C_Fire_Giant_Red
+        Price: 150
+      - Item: C_J_Captain_Hat
+        Price: 150
+      - Item: C_Angel_Marcher_Hat
+        Price: 150
+      - Item: C_CLB_KP_DC
+        Price: 150
+      - Item: C_Gold_Magestic_Goat
+        Price: 150
+      - Item: C_Evil_Marcher_Hat
+        Price: 150
+      - Item: C_CLB_GAT_BK
+        Price: 150
+      - Item: C_Youinone_Mask
+        Price: 150
+      - Item: C_Cat_Ear_Hat
+        Price: 150
+      - Item: C_Asgard_Circlet_TW
+        Price: 150
+      - Item: C_CatEars_Cyber_HeadP
+        Price: 150
+      - Item: C_Black_Witch_Hat
+        Price: 150
+      - Item: C_Dark_Knight_Mask
+        Price: 150
+      - Item: C_Artist_Hat
+        Price: 150
+      - Item: C_Guide_Of_Dead_Cap
+        Price: 150
+      - Item: C_Khalitzburg_Helm_BL
+        Price: 150
+      - Item: C_Khalitzburg_KN_Helm_W
+        Price: 150
+      - Item: C_Anubis_Helm_J
+        Price: 150
+      - Item: C_Black_Cat_Ears_Beret
+        Price: 150
+      - Item: C_Cowboy_Hat_B
+        Price: 150
+      - Item: C_Chic_Peony
+        Price: 150
+      - Item: C_Seraph_Wing_Helm
+        Price: 150
+      - Item: C_Royal_Milk_Tea_Hat
+        Price: 150
+      - Item: C_Darkness_Helm
+        Price: 150
+      - Item: C_Magic_Helm
+        Price: 150
+      - Item: C_Felock_Cap_
+        Price: 150
+      - Item: C_CLB_DT_TS_Wing
+        Price: 150
+      - Item: C_Thanatos_Sword
+        Price: 150
+      - Item: C_Dark_Lord_Cloak
+        Price: 150
+      - Item: C_Leticia_Wing
+        Price: 150
+      - Item: C_Evil_Scythe
+        Price: 150
+      - Item: C_Bloody_Murderer_Knife
+        Price: 150
+      - Item: C_GreatDevilWing
+        Price: 150
+      - Item: C_Immortal_H_Spear
+        Price: 150
+      - Item: C_Big_Shuriken
+        Price: 150
+      - Item: C_Labrys
+        Price: 150
+      - Item: C_Dimensional_Sword
+        Price: 150
+      - Item: C_Lord_Of_Death_Shield
+        Price: 150
+      - Item: C_Loli_Ruri_Moon
+        Price: 150
+      - Item: C_Knights_Sword_Shield
+        Price: 150
+      - Item: C_Loli_Ruri_Moon_B
+        Price: 150
+      - Item: C_Arcanum_Corvus_Corax
+        Price: 150
+      - Item: C_Baphomet_Scythe
+        Price: 150
+      - Item: C_HDP_Scythe
+        Price: 150
+      - Item: C_Valkyrie_Wing
+        Price: 150
+      - Item: C_Baldr_Wing_TW
+        Price: 150
+      - Item: C_Sandalphon_Wing_TW
+        Price: 150
+      - Item: C_Wings_of_Gabriel
+        Price: 150
+      - Item: C_Mystical_Wing
+        Price: 150
+      - Item: C_Sakura_Wing
+        Price: 150
+      - Item: C_Amistr_Bag
+        Price: 150
+      - Item: C_White_Fox_Tail
+        Price: 150
+      - Item: C_Dark_Lord_Manteau
+        Price: 150
+      - Item: C_BlueAngeling_Wing
+        Price: 150
+      - Item: C_Guardian_Angelwing
+        Price: 150
+      - Item: C_Wing_Of_Angel_Move_BK
+        Price: 150
+      - Item: C_Blue_Magpie
+        Price: 150
+      - Item: C_Wing_Of_Angel_Move_RD
+        Price: 150
+      - Item: C_Wing_Of_Happiness
+        Price: 150
+      - Item: C_Wing_Of_Angel_Move_GR
+        Price: 150
+      - Item: C_Round_Eyes
+        Price: 150
+      - Item: C_Blink_Eyes_Sakura
+        Price: 150
+      - Item: C_Black_Glasses
+        Price: 150
+      - Item: C_3D_Glasses
+        Price: 150
+      - Item: C_Morocc_Kid_Servant
+        Price: 150
+      - Item: C_Kid_Deviling
+        Price: 150
+      - Item: C_Robo_Eye
+        Price: 150
+      - Item: C_Sunglasses
+        Price: 150
+      - Item: C_Noble_Mask
+        Price: 150
+      - Item: C_Baron_Evil_Eye
+        Price: 150
+      - Item: C_Brother_Keen_Eye
+        Price: 150
+      - Item: C_Cyclops_Visor
+        Price: 150
+      - Item: C_Eyes_Of_Ifrit
+        Price: 150
+      - Item: C_Evil_Mask
+        Price: 150
+      - Item: C_Devoted_Eyes
+        Price: 150
+      - Item: C_8Type_PurgatorialWing
+        Price: 150
+      - Item: C_Gangster_Patch
+        Price: 150
+      - Item: C_Fallen_Angel_Blessing
+        Price: 150
+      - Item: C_Tiger_BL
+        Price: 150
+      - Item: C_Snow_Fox_TW
+        Price: 150
+      - Item: C_Tiger_WH
+        Price: 150
+      - Item: C_Wanderer_Grim_Reaper
+        Price: 150
+      - Item: C_Seyren_Mini
+        Price: 150
+      - Item: C_Violet_Starlight
+        Price: 150
+      - Item: C_CLB_DT_TS_Mini
+        Price: 150
+      - Item: C_Helm_Of_Ra_KR
+        Price: 150
+      - Item: C_Serpent_Crystal
+        Price: 150
+      - Item: C_Mob_Scarf
+        Price: 150
+      - Item: C_Eremes_Scarf_Black
+        Price: 150
+      - Item: C_Ghost_Bat_J
+        Price: 150
+      - Item: C_Glastheim_Onlooker
+        Price: 150
+      - Item: C_Antique_Pipe_J
+        Price: 150
+      - Item: C_Holy_Rosario
+        Price: 150
+      - Item: C_Miracle_Blue_Rose
+        Price: 150
+      - Item: C_Bubble_Gum_In_Mouth
+        Price: 150
+      - Item: C_Mask_Of_Orochimaru
+        Price: 150
+      - Item: C_Well_Baked_Toast
+        Price: 150
+      - Item: C_OneEyedJack
+        Price: 150
+      - Item: C_Ifrits_Breath
+        Price: 150
+      - Item: C_Vajra
+        Price: 150
+      - Item: C_Poring_Soap_Pipe
+        Price: 150
+      - Item: C_Cons_Of_Light_Dark
+        Price: 150
+      - Item: C_Worg_In_Mouth
+        Price: 150
+      - Item: C_Yesterday_Once_More
+        Price: 150
+      - Item: C_Cons_Of_Darkness
+        Price: 150
+      - Item: C_Pipe_Of_Jiraiya
+        Price: 150
+      - Item: C_Cat_Mouth
+        Price: 150
+      - Item: Lincoln_Beard
+        Price: 150
+      - Item: C_Fan_In_Mouth
+        Price: 150
+      - Item: C_Subject_Aura_Red
+        Price: 150
+      - Item: C_H_Knight_Cloak
+        Price: 150
+      - Item: C_SurviveOrb
+        Price: 150
+      - Item: C_Dark_Snake_Lord_Stall
+        Price: 150
+      - Item: C_Helm_Of_Galaxia
+        Price: 150
+      - Item: Costama_Egg28
+        Price: 150
+      - Item: Costama_Egg24
+        Price: 150
+      - Item: Costama_Egg21
+        Price: 150
+      - Item: Costama_Egg22
+        Price: 150
+  - Tab: Hot    # enchant stones
+    Items:
+      - Item: Nebula_Of_FS3
+        Price: 150
+      - Item: Shrink_Effect
+        Price: 50
+      - Item: Nebula_Of_HP3
+        Price: 150
+      - Item: Nebula_Of_EA3
+        Price: 150
+      - Item: Nebula_Of_SH3
+        Price: 150
+      - Item: Nebula_Of_SP3
+        Price: 150
+      - Item: Star_Cluster_Of_Pow3
         Price: 1500
-      - Item: Hero_Weapon_Up_Box_1
-        Price: 50
-      - Item: Hero_Weapon_Up_Box_2
-        Price: 50
-      - Item: Hero_Weapon_Up_Box_3
-        Price: 50
+      - Item: Star_Cluster_Of_Spl3
+        Price: 1500
+      - Item: Star_Cluster_Of_Crt3
+        Price: 1500
+      - Item: Star_Of_Vital5
+        Price: 250
+      - Item: Soul_Purify_R_10
+        Price: 1500
+      - Item: Star_Of_MasterArcher5
+        Price: 250
+      - Item: Star_Of_Mettle5
+        Price: 250
+      - Item: Star_Of_Spell5
+        Price: 250
+      - Item: Star_Of_Sharp5
+        Price: 250
+      - Item: Shard_Jewelry_Luk
+        Price: 500
+      - Item: Shard_Jewelry_Agi
+        Price: 500
+      - Item: Shard_Jewelry_Str
+        Price: 500
+      - Item: MagicEessence9
+        Price: 1250
+      - Item: MasterArcher9
+        Price: 1250
+      - Item: Mettle9
+        Price: 1250
+      - Item: Shard_Jewelry_Int
+        Price: 500
+      - Item: Shard_Jewelry_Dex
+        Price: 500
+      - Item: Shard_Jewelry_Vit
+        Price: 500
+      - Item: Adamatine10
+        Price: 1500
+      - Item: MasterArcher10
+        Price: 1500
+      - Item: Acute10
+        Price: 1500
+      - Item: Corrupt_R_5
+        Price: 250
+      - Item: Spell_Jewel_9
+        Price: 1500
+      - Item: Affection10
+        Price: 1500
+      - Item: Tenacity10
+        Price: 1500
+      - Item: Mettle10
+        Price: 1500
+      - Item: MagicEessence10
+        Price: 1500
+      - Item: Glacier_F_Orb_39
+        Price: 5000
+      - Item: Glacier_F_Orb_47
+        Price: 5000
+      - Item: Glacier_F_Orb_109
+        Price: 5000
+      - Item: Physical_Grade_5
+        Price: 1500
+      - Item: Glacier_F_Orb_14
+        Price: 5000
+      - Item: Magical_Grade_5
+        Price: 1500
+      - Item: Glacier_F_Orb_48
+        Price: 5000
+      - Item: Glacier_F_Orb_30
+        Price: 5000
+      - Item: Glacier_F_Orb_20
+        Price: 5000
+      - Item: Glacier_F_Orb_33
+        Price: 5000
+      - Item: Glacier_F_Orb_1
+        Price: 5000
+      - Item: Glacier_F_Orb_162
+        Price: 5000
+      - Item: Glacier_F_Orb_27
+        Price: 5000
+      - Item: Glacier_F_Orb_10
+        Price: 5000
+      - Item: Glacier_F_Orb_82
+        Price: 5000
+      - Item: Glacier_F_Orb_148
+        Price: 5000
+      - Item: Glacier_F_Orb_92
+        Price: 5000
+      - Item: Glacier_F_Orb_136
+        Price: 5000
+      - Item: Glacier_F_Orb_6
+        Price: 5000
+      - Item: Glacier_F_Orb_34
+        Price: 5000
+      - Item: Glacier_F_Orb_63
+        Price: 5000
+      - Item: Glacier_F_Orb_90
+        Price: 5000
+      - Item: Glacier_F_Orb_50
+        Price: 5000
+      - Item: Glacier_F_Orb_133
+        Price: 5000
+      - Item: Glacier_F_Orb_42
+        Price: 5000
+      - Item: Glacier_F_Orb_17
+        Price: 5000
+      - Item: Glacier_F_Orb_49
+        Price: 5000
+      - Item: Mad_Bunny_Enchant_3_4
+        Price: 75
+      - Item: FixedCasting05
+        Price: 100
+      - Item: Mad_Bunny_Enchant_3_3
+        Price: 75
+      - Item: Fortune3
+        Price: 15
+      - Item: Intellect3
+        Price: 15
+      - Item: Force3
+        Price: 15
+  - Tab: Permanent    # equipment
+    Items:
       - Item: Great_Hero_Boots
         Price: 500
       - Item: Hero_Favor
-        Price: 150
-      - Item: Remodel_Hero_Boots
-        Price: 50
-      - Item: Hero_Weapon_Up_Box_4
-        Price: 50
-      - Item: Hero_Weapon_Up_Box_5
-        Price: 50
-      - Item: Hero_Weapon_Up_Box_6
-        Price: 50
-      - Item: Up_Hero_Weapon_Box
-        Price: 25
-      - Item: Great_Hero_Bravery
-        Price: 15
-      - Item: Great_Hero_Wisdom
-        Price: 15
-      - Item: Neuralizer
-        Price: 50
-      - Item: RWC_Scroll_2012
-        Price: 5
-      - Item: RWC_2012_Set_Box
-        Price: 150
-      - Item: Shadow_Refine_Hammer
-        Price: 15
-      - Item: Temporal_Manteau_Box
-        Price: 50
-      - Item: Temporal_Refine_Cube
         Price: 150
       - Item: Temporal_Armor_TW_LT
         Price: 75
@@ -208,14 +445,6 @@ Body:
         Price: 75
       - Item: Temporal_Sprout_TW
         Price: 75
-      - Item: TokenOfHonor
-        Price: 1
-      - Item: Swz_Honor_Token
-        Price: 1
-      - Item: EP17_1_EVT02
-        Price: 1
-      - Item: EP17_1_EVT39
-        Price: 1
       - Item: Gray_W_Suits
         Price: 50
       - Item: Gray_W_Robe
@@ -223,8 +452,6 @@ Body:
       - Item: Gray_W_Manteau
         Price: 50
       - Item: Gray_W_Muffler
-        Price: 50
-      - Item: GrayWolf_9_Ticket
         Price: 50
       - Item: Gray_W_Boots
         Price: 50
@@ -242,8 +469,6 @@ Body:
         Price: 50
       - Item: Snowflower_Ring
         Price: 50
-      - Item: Snow_F_Refine
-        Price: 50
       - Item: Snowflower_Manteau
         Price: 50
       - Item: Snowflower_Muffler
@@ -257,12 +482,6 @@ Body:
       - Item: FateSin_Boots_IG
         Price: 50
       - Item: FateSin_Boots_HN
-        Price: 50
-      - Item: Justice_Weapon_Box
-        Price: 50
-      - Item: GoodnEvil_Helm_Box
-        Price: 50
-      - Item: Injustice_Weapon_Box
         Price: 50
       - Item: FateSin_Boots_AG
         Price: 50
@@ -282,8 +501,6 @@ Body:
         Price: 150
       - Item: Star_Suit_Of_Con
         Price: 150
-      - Item: AllMighty_Up
-        Price: 50
       - Item: S_AllMighty_Earring
         Price: 300
       - Item: S_AllMighty_Pendant
@@ -300,11 +517,7 @@ Body:
         Price: 50
       - Item: D_Glacier_Shoes
         Price: 50
-      - Item: EP20_DGA_Refine
-        Price: 50
       - Item: D_Glacier_Whip
-        Price: 50
-      - Item: EP19_DGW_Refine
         Price: 50
       - Item: Overwhelm_Int_Armor
         Price: 50
@@ -548,8 +761,6 @@ Body:
         Price: 50
       - Item: Vivatus_F_F_model
         Price: 50
-      - Item: Vivatus_Weapon_Hammer
-        Price: 50
       - Item: Vivatus_F_G_Spear
         Price: 50
       - Item: Vivatus_F_G_Sword
@@ -566,8 +777,6 @@ Body:
         Price: 50
       - Item: Vivatus_F_Wand
         Price: 50
-      - Item: Viva_Adul_Hat_Box_11
-        Price: 150
       - Item: Vivatus_F_Lapier
         Price: 50
       - Item: Vivatus_F_Knuckle
@@ -576,6 +785,244 @@ Body:
         Price: 50
       - Item: Vivatus_F_Mace
         Price: 50
+      - Item: S_M_Mammoth_Armor
+        Price: 100
+      - Item: S_M_Mammoth_Shoes
+        Price: 100
+      - Item: S_P_Power_Weapon
+        Price: 100
+      - Item: S_M_Spell_Shield
+        Price: 100
+      - Item: S_P_Power_Shield
+        Price: 100
+      - Item: S_M_Spell_Weapon
+        Price: 100
+      - Item: S_Full_Spell_Shoes
+        Price: 100
+      - Item: S_Full_Spell_Armor
+        Price: 100
+      - Item: Full_Moon
+        Price: 150
+      - Item: T_Archangel_Wing
+        Price: 150
+      - Item: Brilliant_Golden_Wings
+        Price: 150
+      - Item: Signet_Of_Pow_Star
+        Price: 50
+      - Item: Signet_Of_Spl_Star
+        Price: 50
+      - Item: Signet_Of_Crt_Star
+        Price: 50
+  - Tab: Scrolls    # buff and skill scrolls
+    Items:
+      - Item: Blessing_10_Scroll
+        Price: 5
+      - Item: Inc_Agi_10_Scroll
+        Price: 5
+      - Item: Aspersio_5_Scroll
+        Price: 5
+      - Item: Assumptio_5_Scroll
+        Price: 10
+      - Item: Wind_Walk_10_Scroll
+        Price: 10
+      - Item: Adrenaline_Scroll
+        Price: 10
+      - Item: Vermilion_10_Scroll
+        Price: 10
+      - Item: Storm_10_Scroll
+        Price: 10
+      - Item: Meteor_10_Scroll
+        Price: 10
+      - Item: Scaraba_Scroll
+        Price: 15
+      - Item: RWC_Scroll_2012
+        Price: 5
+  - Tab: Consumables    # potions, food and convenience items
+    Items:
+      - Item: Guarana_Candy
+        Price: 1
+      - Item: HP_Increase_PotionL
+        Price: 3
+      - Item: SP_Increase_PotionL
+        Price: 3
+      - Item: 24_S_Ev_Juice
+        Price: 5
+      - Item: E_All_In_One_Buff
+        Price: 5
+      - Item: G_Limit_Power_Booster
+        Price: 5
+      - Item: Yggdrasil_Seed_Box
+        Price: 25
+      - Item: Abrasive
+        Price: 5
+      - Item: Iggdrasilberry_Box
+        Price: 50
+      - Item: Elemental_Fire
+        Price: 5
+      - Item: Elemental_Earth
+        Price: 5
+      - Item: Elemental_Water
+        Price: 5
+      - Item: Elemental_Wind
+        Price: 5
+      - Item: Max_Weight_Up_Scroll
+        Price: 15
+      - Item: Battle_Manual_X3
+        Price: 25
+      - Item: HE_Bubble_Gum
+        Price: 15
+      - Item: Boarding_Halter
+        Price: 50
+      - Item: C_Wing_Of_Fly
+        Price: 1
+      - Item: Runstone_Lux
+        Price: 15
+      - Item: EXPUP_Potion1Box
+        Price: 50
+  - Tab: Other    # boxes, materials, refine tickets, pet eggs
+    Items:
+      - Item: Gold
+        Price: 15
+      - Item: Gold_Bullion
+        Price: 30
+      - Item: MVP_Hunt_Box
+        Price: 25
+      - Item: Emperium
+        Price: 50
+      - Item: Emperium_Anvil
+        Price: 60
+      - Item: Recall_MaleGM
+        Price: 5
+      - Item: Etel_Topaz
+        Price: 1
+      - Item: Etel_Amber
+        Price: 1
+      - Item: Etel_Violet_Jewel
+        Price: 1
+      - Item: Etel_Skyblue_Jewel
+        Price: 1
+      - Item: Blessed_Etel_Dust
+        Price: 1
+      - Item: HD_Etel_Carnium
+        Price: 1
+      - Item: HD_Etherdeocon
+        Price: 1
+      - Item: HD_Ethernium
+        Price: 1
+      - Item: HD_Etel_Bradium
+        Price: 1
+      - Item: Enriched_Ethernium
+        Price: 1
+      - Item: F_HD_Bradium_Box10
+        Price: 1
+      - Item: Enriched_Etherdeocon
+        Price: 3
+      - Item: HD_Elunium_50Box
+        Price: 5
+      - Item: Blacksmith_Blessing
+        Price: 5
+      - Item: HD_Oridecon_50Box
+        Price: 3
+      - Item: F_Enriched_Elunium_Box
+        Price: 5
+      - Item: F_HD_Carnium_Box10
+        Price: 5
+      - Item: F_Enriched_Oridecon_Box
+        Price: 1
+      - Item: Guarantee_Armor_7Up
+        Price: 100
+      - Item: Guarantee_Armor_8Up
+        Price: 150
+      - Item: Guarantee_Armor_9Up
+        Price: 200
+      - Item: Guarantee_Armor_10Up
+        Price: 300
+      - Item: Guarantee_Armor_11Up
+        Price: 450
+      - Item: Guarantee_Armor_12Up
+        Price: 600
+      - Item: Guarantee_Armor_13Up
+        Price: 800
+      - Item: Guarantee_Armor_14Up
+        Price: 1000
+      - Item: Guarantee_Armor_15Up
+        Price: 1500
+      - Item: Guarantee_Weapon_7Up
+        Price: 100
+      - Item: Guarantee_Weapon_8Up
+        Price: 150
+      - Item: Guarantee_Weapon_9Up
+        Price: 200
+      - Item: Guarantee_Weapon_10Up
+        Price: 300
+      - Item: Guarantee_Weapon_11Up
+        Price: 450
+      - Item: Guarantee_Weapon_12Up
+        Price: 600
+      - Item: Guarantee_Weapon_13Up
+        Price: 800
+      - Item: Guarantee_Weapon_14Up
+        Price: 1000
+      - Item: Guarantee_Weapon_15Up
+        Price: 1500
+      - Item: Hero_Weapon_Up_Box_1
+        Price: 50
+      - Item: Hero_Weapon_Up_Box_2
+        Price: 50
+      - Item: Hero_Weapon_Up_Box_3
+        Price: 50
+      - Item: Remodel_Hero_Boots
+        Price: 50
+      - Item: Hero_Weapon_Up_Box_4
+        Price: 50
+      - Item: Hero_Weapon_Up_Box_5
+        Price: 50
+      - Item: Hero_Weapon_Up_Box_6
+        Price: 50
+      - Item: Up_Hero_Weapon_Box
+        Price: 25
+      - Item: Great_Hero_Bravery
+        Price: 15
+      - Item: Great_Hero_Wisdom
+        Price: 15
+      - Item: Neuralizer
+        Price: 50
+      - Item: RWC_2012_Set_Box
+        Price: 150
+      - Item: Shadow_Refine_Hammer
+        Price: 15
+      - Item: Temporal_Manteau_Box
+        Price: 50
+      - Item: Temporal_Refine_Cube
+        Price: 150
+      - Item: TokenOfHonor
+        Price: 1
+      - Item: Swz_Honor_Token
+        Price: 1
+      - Item: EP17_1_EVT02
+        Price: 1
+      - Item: EP17_1_EVT39
+        Price: 1
+      - Item: GrayWolf_9_Ticket
+        Price: 50
+      - Item: Snow_F_Refine
+        Price: 50
+      - Item: Justice_Weapon_Box
+        Price: 50
+      - Item: GoodnEvil_Helm_Box
+        Price: 50
+      - Item: Injustice_Weapon_Box
+        Price: 50
+      - Item: AllMighty_Up
+        Price: 50
+      - Item: EP20_DGA_Refine
+        Price: 50
+      - Item: EP19_DGW_Refine
+        Price: 50
+      - Item: Vivatus_Weapon_Hammer
+        Price: 50
+      - Item: Viva_Adul_Hat_Box_11
+        Price: 150
       - Item: Magic_Card_Album
         Price: 50
       - Item: Old_C_Album_Acc
@@ -594,294 +1041,8 @@ Body:
         Price: 10
       - Item: Old_Card_Album
         Price: 5
-      - Item: S_M_Mammoth_Armor
-        Price: 100
-      - Item: S_M_Mammoth_Shoes
-        Price: 100
-      - Item: S_P_Power_Weapon
-        Price: 100
-      - Item: S_M_Spell_Shield
-        Price: 100
       - Item: Shadow_9_Refine_Hammer
         Price: 50
-      - Item: S_P_Power_Shield
-        Price: 100
-      - Item: S_M_Spell_Weapon
-        Price: 100
-      - Item: S_Full_Spell_Shoes
-        Price: 100
-      - Item: S_Full_Spell_Armor
-        Price: 100
-      - Item: C_Rune_Helm
-        Price: 150
-      - Item: C_Lord_of_Death
-        Price: 150
-      - Item: C_Flying_Angel
-        Price: 150
-      - Item: C_White_Wizardry_Hat
-        Price: 150
-      - Item: C_White_Boys_Hat
-        Price: 150
-      - Item: Full_Moon
-        Price: 150
-      - Item: C_Helm_Of_Angel
-        Price: 150
-      - Item: C_VesperHeadGear_J
-        Price: 150
-      - Item: C_Happy_Summer_Wig
-        Price: 150
-      - Item: C_Black_Strong_Hair
-        Price: 150
-      - Item: C_Red_Strong_Hair
-        Price: 150
-      - Item: C_Blue_Strong_Hair
-        Price: 150
-      - Item: C_Hair_Of_The_Strong
-        Price: 150
-      - Item: C_Priest_Hat_J
-        Price: 150
-      - Item: C_White_Strong_Hair
-        Price: 150
-      - Item: C_Pink_Angel_Hairband
-        Price: 150
-      - Item: C_Bldy_Light_Dark_Crown
-        Price: 150
-      - Item: C_Reliance_Crown
-        Price: 150
-      - Item: C_Helm_Of_Sun
-        Price: 150
-      - Item: C_Fire_Giant_Red
-        Price: 150
-      - Item: C_J_Captain_Hat
-        Price: 150
-      - Item: C_Angel_Marcher_Hat
-        Price: 150
-      - Item: C_CLB_KP_DC
-        Price: 150
-      - Item: C_Gold_Magestic_Goat
-        Price: 150
-      - Item: C_Evil_Marcher_Hat
-        Price: 150
-      - Item: C_CLB_GAT_BK
-        Price: 150
-      - Item: C_Youinone_Mask
-        Price: 150
-      - Item: C_Cat_Ear_Hat
-        Price: 150
-      - Item: C_Asgard_Circlet_TW
-        Price: 150
-      - Item: C_CatEars_Cyber_HeadP
-        Price: 150
-      - Item: C_Black_Witch_Hat
-        Price: 150
-      - Item: C_Dark_Knight_Mask
-        Price: 150
-      - Item: C_Artist_Hat
-        Price: 150
-      - Item: C_Guide_Of_Dead_Cap
-        Price: 150
-      - Item: C_Khalitzburg_Helm_BL
-        Price: 150
-      - Item: C_Khalitzburg_KN_Helm_W
-        Price: 150
-      - Item: C_Anubis_Helm_J
-        Price: 150
-      - Item: C_Black_Cat_Ears_Beret
-        Price: 150
-      - Item: C_Cowboy_Hat_B
-        Price: 150
-      - Item: C_Chic_Peony
-        Price: 150
-      - Item: C_Seraph_Wing_Helm
-        Price: 150
-      - Item: C_Royal_Milk_Tea_Hat
-        Price: 150
-      - Item: C_Darkness_Helm
-        Price: 150
-      - Item: C_Magic_Helm
-        Price: 150
-      - Item: C_Felock_Cap_
-        Price: 150
-      - Item: C_CLB_DT_TS_Wing
-        Price: 150
-      - Item: C_Thanatos_Sword
-        Price: 150
-      - Item: C_Dark_Lord_Cloak
-        Price: 150
-      - Item: C_Leticia_Wing
-        Price: 150
-      - Item: C_Evil_Scythe
-        Price: 150
-      - Item: C_Bloody_Murderer_Knife
-        Price: 150
-      - Item: C_GreatDevilWing
-        Price: 150
-      - Item: C_Immortal_H_Spear
-        Price: 150
-      - Item: C_Big_Shuriken
-        Price: 150
-      - Item: C_Labrys
-        Price: 150
-      - Item: C_Dimensional_Sword
-        Price: 150
-      - Item: C_Lord_Of_Death_Shield
-        Price: 150
-      - Item: C_Loli_Ruri_Moon
-        Price: 150
-      - Item: C_Knights_Sword_Shield
-        Price: 150
-      - Item: C_Loli_Ruri_Moon_B
-        Price: 150
-      - Item: C_Arcanum_Corvus_Corax
-        Price: 150
-      - Item: C_Baphomet_Scythe
-        Price: 150
-      - Item: C_HDP_Scythe
-        Price: 150
-      - Item: C_Valkyrie_Wing
-        Price: 150
-      - Item: C_Baldr_Wing_TW
-        Price: 150
-      - Item: C_Sandalphon_Wing_TW
-        Price: 150
-      - Item: C_Wings_of_Gabriel
-        Price: 150
-      - Item: C_Mystical_Wing
-        Price: 150
-      - Item: C_Sakura_Wing
-        Price: 150
-      - Item: C_Amistr_Bag
-        Price: 150
-      - Item: C_White_Fox_Tail
-        Price: 150
-      - Item: C_Dark_Lord_Manteau
-        Price: 150
-      - Item: T_Archangel_Wing
-        Price: 150
-      - Item: C_BlueAngeling_Wing
-        Price: 150
-      - Item: C_Guardian_Angelwing
-        Price: 150
-      - Item: C_Wing_Of_Angel_Move_BK
-        Price: 150
-      - Item: C_Blue_Magpie
-        Price: 150
-      - Item: C_Wing_Of_Angel_Move_RD
-        Price: 150
-      - Item: Brilliant_Golden_Wings
-        Price: 150
-      - Item: C_Wing_Of_Happiness
-        Price: 150
-      - Item: C_Wing_Of_Angel_Move_GR
-        Price: 150
-      - Item: C_Round_Eyes
-        Price: 150
-      - Item: C_Blink_Eyes_Sakura
-        Price: 150
-      - Item: C_Black_Glasses
-        Price: 150
-      - Item: C_3D_Glasses
-        Price: 150
-      - Item: C_Morocc_Kid_Servant
-        Price: 150
-      - Item: C_Kid_Deviling
-        Price: 150
-      - Item: C_Robo_Eye
-        Price: 150
-      - Item: C_Sunglasses
-        Price: 150
-      - Item: C_Noble_Mask
-        Price: 150
-      - Item: C_Baron_Evil_Eye
-        Price: 150
-      - Item: C_Brother_Keen_Eye
-        Price: 150
-      - Item: C_Cyclops_Visor
-        Price: 150
-      - Item: C_Eyes_Of_Ifrit
-        Price: 150
-      - Item: C_Evil_Mask
-        Price: 150
-      - Item: C_Devoted_Eyes
-        Price: 150
-      - Item: C_8Type_PurgatorialWing
-        Price: 150
-      - Item: C_Gangster_Patch
-        Price: 150
-      - Item: C_Fallen_Angel_Blessing
-        Price: 150
-      - Item: C_Tiger_BL
-        Price: 150
-      - Item: C_Snow_Fox_TW
-        Price: 150
-      - Item: C_Tiger_WH
-        Price: 150
-      - Item: C_Wanderer_Grim_Reaper
-        Price: 150
-      - Item: C_Seyren_Mini
-        Price: 150
-      - Item: C_Violet_Starlight
-        Price: 150
-      - Item: C_CLB_DT_TS_Mini
-        Price: 150
-      - Item: C_Helm_Of_Ra_KR
-        Price: 150
-      - Item: C_Serpent_Crystal
-        Price: 150
-      - Item: C_Mob_Scarf
-        Price: 150
-      - Item: C_Eremes_Scarf_Black
-        Price: 150
-      - Item: C_Ghost_Bat_J
-        Price: 150
-      - Item: C_Glastheim_Onlooker
-        Price: 150
-      - Item: C_Antique_Pipe_J
-        Price: 150
-      - Item: C_Holy_Rosario
-        Price: 150
-      - Item: C_Miracle_Blue_Rose
-        Price: 150
-      - Item: C_Bubble_Gum_In_Mouth
-        Price: 150
-      - Item: C_Mask_Of_Orochimaru
-        Price: 150
-      - Item: C_Well_Baked_Toast
-        Price: 150
-      - Item: C_OneEyedJack
-        Price: 150
-      - Item: C_Ifrits_Breath
-        Price: 150
-      - Item: C_Vajra
-        Price: 150
-      - Item: C_Poring_Soap_Pipe
-        Price: 150
-      - Item: C_Cons_Of_Light_Dark
-        Price: 150
-      - Item: C_Worg_In_Mouth
-        Price: 150
-      - Item: C_Yesterday_Once_More
-        Price: 150
-      - Item: C_Cons_Of_Darkness
-        Price: 150
-      - Item: C_Pipe_Of_Jiraiya
-        Price: 150
-      - Item: C_Cat_Mouth
-        Price: 150
-      - Item: Lincoln_Beard
-        Price: 150
-      - Item: C_Fan_In_Mouth
-        Price: 150
-      - Item: C_Subject_Aura_Red
-        Price: 150
-      - Item: C_H_Knight_Cloak
-        Price: 150
-      - Item: C_SurviveOrb
-        Price: 150
-      - Item: C_Dark_Snake_Lord_Stall
-        Price: 150
-      - Item: C_Helm_Of_Galaxia
-        Price: 150
       - Item: Stone_Robe3_Box
         Price: 5
       - Item: Stone_Robe2_Box
@@ -900,150 +1061,12 @@ Body:
         Price: 5
       - Item: Stone_Bottom2_Box
         Price: 5
-      - Item: Signet_Of_Pow_Star
-        Price: 50
-      - Item: Signet_Of_Spl_Star
-        Price: 50
-      - Item: Signet_Of_Crt_Star
-        Price: 50
-      - Item: Nebula_Of_FS3
-        Price: 150
-      - Item: Shrink_Effect
-        Price: 50
-      - Item: Nebula_Of_HP3
-        Price: 150
-      - Item: Nebula_Of_EA3
-        Price: 150
-      - Item: Nebula_Of_SH3
-        Price: 150
-      - Item: Nebula_Of_SP3
-        Price: 150
-      - Item: Star_Cluster_Of_Pow3
-        Price: 1500
-      - Item: Star_Cluster_Of_Spl3
-        Price: 1500
-      - Item: Star_Cluster_Of_Crt3
-        Price: 1500
-      - Item: Star_Of_Vital5
-        Price: 250
-      - Item: Soul_Purify_R_10
-        Price: 1500
-      - Item: Star_Of_MasterArcher5
-        Price: 250
-      - Item: Star_Of_Mettle5
-        Price: 250
-      - Item: Star_Of_Spell5
-        Price: 250
-      - Item: Star_Of_Sharp5
-        Price: 250
-      - Item: Shard_Jewelry_Luk
-        Price: 500
-      - Item: Shard_Jewelry_Agi
-        Price: 500
-      - Item: Shard_Jewelry_Str
-        Price: 500
-      - Item: MagicEessence9
-        Price: 1250
-      - Item: MasterArcher9
-        Price: 1250
-      - Item: Mettle9
-        Price: 1250
-      - Item: Shard_Jewelry_Int
-        Price: 500
-      - Item: Shard_Jewelry_Dex
-        Price: 500
-      - Item: Shard_Jewelry_Vit
-        Price: 500
-      - Item: Adamatine10
-        Price: 1500
-      - Item: MasterArcher10
-        Price: 1500
-      - Item: Acute10
-        Price: 1500
-      - Item: Corrupt_R_5
-        Price: 250
-      - Item: Spell_Jewel_9
-        Price: 1500
-      - Item: Affection10
-        Price: 1500
-      - Item: Tenacity10
-        Price: 1500
-      - Item: Mettle10
-        Price: 1500
-      - Item: MagicEessence10
-        Price: 1500
-      - Item: Glacier_F_Orb_39
-        Price: 5000
-      - Item: Glacier_F_Orb_47
-        Price: 5000
-      - Item: Glacier_F_Orb_109
-        Price: 5000
-      - Item: Physical_Grade_5
-        Price: 1500
-      - Item: Glacier_F_Orb_14
-        Price: 5000
-      - Item: Magical_Grade_5
-        Price: 1500
-      - Item: Glacier_F_Orb_48
-        Price: 5000
-      - Item: Glacier_F_Orb_30
-        Price: 5000
-      - Item: Glacier_F_Orb_20
-        Price: 5000
-      - Item: Glacier_F_Orb_33
-        Price: 5000
-      - Item: Glacier_F_Orb_1
-        Price: 5000
-      - Item: Glacier_F_Orb_162
-        Price: 5000
-      - Item: Glacier_F_Orb_27
-        Price: 5000
-      - Item: Glacier_F_Orb_10
-        Price: 5000
-      - Item: Glacier_F_Orb_82
-        Price: 5000
-      - Item: Glacier_F_Orb_148
-        Price: 5000
-      - Item: Glacier_F_Orb_92
-        Price: 5000
-      - Item: Glacier_F_Orb_136
-        Price: 5000
-      - Item: Glacier_F_Orb_6
-        Price: 5000
-      - Item: Glacier_F_Orb_34
-        Price: 5000
-      - Item: Glacier_F_Orb_63
-        Price: 5000
-      - Item: Glacier_F_Orb_90
-        Price: 5000
-      - Item: Glacier_F_Orb_50
-        Price: 5000
-      - Item: Glacier_F_Orb_133
-        Price: 5000
-      - Item: Glacier_F_Orb_42
-        Price: 5000
-      - Item: Glacier_F_Orb_17
-        Price: 5000
-      - Item: Glacier_F_Orb_49
-        Price: 5000
-      - Item: Mad_Bunny_Enchant_3_4
-        Price: 75
-      - Item: FixedCasting05
-        Price: 100
-      - Item: Mad_Bunny_Enchant_3_3
-        Price: 75
       - Item: EpisodClear16
         Price: 50
       - Item: EpisodClear17
         Price: 50
       - Item: EpisodClear18
         Price: 50
-      - Item: Fortune3
-        Price: 15
-      - Item: Intellect3
-        Price: 15
-      - Item: Force3
-        Price: 15
       - Item: Incubus_Egg
         Price: 50
       - Item: Nightmare_TerrorH_EGG
@@ -1104,16 +1127,7 @@ Body:
         Price: 15
       - Item: Main_Lucky_Box_
         Price: 5
-      - Item: Costama_Egg28
-        Price: 150
-      - Item: Costama_Egg24
-        Price: 150
-      - Item: Costama_Egg21
-        Price: 150
       - Item: 2020_Goal_Gift_Box
         Price: 150
       - Item: E_Card_Pack
         Price: 15
-      - Item: Costama_Egg22
-        Price: 150
-
