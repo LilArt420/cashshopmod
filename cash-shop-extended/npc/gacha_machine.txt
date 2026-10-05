@@ -74,7 +74,7 @@ prontera,172,177,4	script	Gacha Machine#gachamach	2_SLOT_MACHINE,{
 		delitem .coupon_id, .coupon_cost;
 	}
 
-	specialeffect EF_COIN;
+	specialeffect2 154;
 	getitem .@won_item, 1;
 
 	mes "[Gacha Machine]";
@@ -83,9 +83,9 @@ prontera,172,177,4	script	Gacha Machine#gachamach	2_SLOT_MACHINE,{
 	close;
 
 OnInit:
-	.zeny_cost = 500000;
-	.cash_cost = 75;
-	.coupon_cost = 7;
+	.zeny_cost = 200000;
+	.cash_cost = 30;
+	.coupon_cost = 3;
 	.coupon_id = 1000274; // Cachua_Coupon, "[Kachua] Mileage Coupon"
 
 	// "AegisName:weight", one line per item, same AegisNames as db/item_cash.yml.
@@ -104,9 +104,9 @@ OnInit:
 		"SP_Increase_PotionL:5000",
 		"24_S_Ev_Juice:3000",
 		"E_All_In_One_Buff:3000",
-		"E_Challenge_Drink:3000",
-		"Abrasive:1500",
+		"G_Limit_Power_Booster:3000",
 		"Yggdrasil_Seed_Box:600",
+		"Abrasive:3000",
 		"Iggdrasilberry_Box:300",
 		"Elemental_Fire:3000",
 		"Gold:1000",
@@ -126,24 +126,24 @@ OnInit:
 		"C_Wing_Of_Fly:15000",
 		"Runstone_Lux:1000",
 		"EXPUP_Potion1Box:300",
-		"Blessed_Etel_Dust:15000",
+		"Etel_Topaz:15000",
 		"Etel_Amber:15000",
 		"Etel_Violet_Jewel:15000",
 		"Etel_Skyblue_Jewel:15000",
-		"Etel_Topaz:15000",
+		"Blessed_Etel_Dust:15000",
 		"HD_Etel_Carnium:15000",
 		"HD_Etherdeocon:15000",
 		"HD_Ethernium:15000",
 		"HD_Etel_Bradium:15000",
 		"Enriched_Ethernium:15000",
-		"Enriched_Etherdeocon:15000",
 		"F_HD_Bradium_Box10:5000",
+		"Enriched_Etherdeocon:15000",
 		"HD_Elunium_50Box:3000",
-		"HD_Oridecon_50Box:3000",
-		"F_HD_Carnium_Box10:5000",
-		"F_Enriched_Elunium_Box:3000",
-		"F_Enriched_Oridecon_Box:3000",
 		"Blacksmith_Blessing:15000",
+		"HD_Oridecon_50Box:3000",
+		"F_Enriched_Elunium_Box:3000",
+		"F_HD_Carnium_Box10:5000",
+		"F_Enriched_Oridecon_Box:3000",
 		"Guarantee_Armor_7Up:150",
 		"Guarantee_Armor_8Up:100",
 		"Guarantee_Armor_9Up:75",
@@ -270,9 +270,9 @@ OnInit:
 		"Baksojin_Hat_LT:100",
 		"GoldFish_Hat_LT:100",
 		"Gothic_HW_TW_LT:100",
-		"Robo_Eye_:300",
 		"Deepblue_Sunglasses_:300",
 		"Chain_Of_Seal_:200",
+		"Eye_Of_Storm_TH:150",
 		"Professor_MiniGlass_:150",
 		"Demons_Familiar_:150",
 		"Purified_Pigeon_US:100",
@@ -391,16 +391,43 @@ OnInit:
 		"C_Lord_of_Death:100",
 		"C_Flying_Angel:100",
 		"C_White_Wizardry_Hat:100",
-		"C_Blue_Strong_Hair:100",
+		"C_White_Boys_Hat:100",
 		"Full_Moon:100",
 		"C_Helm_Of_Angel:100",
+		"C_VesperHeadGear_J:100",
+		"C_Happy_Summer_Wig:100",
+		"C_Black_Strong_Hair:100",
+		"C_Red_Strong_Hair:100",
+		"C_Blue_Strong_Hair:100",
+		"C_Hair_Of_The_Strong:100",
+		"C_Priest_Hat_J:100",
+		"C_White_Strong_Hair:100",
+		"C_Pink_Angel_Hairband:100",
+		"C_Bldy_Light_Dark_Crown:100",
+		"C_Reliance_Crown:100",
 		"C_Helm_Of_Sun:100",
+		"C_Fire_Giant_Red:100",
 		"C_J_Captain_Hat:100",
+		"C_Angel_Marcher_Hat:100",
+		"C_CLB_KP_DC:100",
+		"C_Gold_Magestic_Goat:100",
+		"C_Evil_Marcher_Hat:100",
+		"C_CLB_GAT_BK:100",
+		"C_Youinone_Mask:100",
+		"C_Cat_Ear_Hat:100",
+		"C_Asgard_Circlet_TW:100",
+		"C_CatEars_Cyber_HeadP:100",
+		"C_Black_Witch_Hat:100",
+		"C_Dark_Knight_Mask:100",
+		"C_Artist_Hat:100",
+		"C_Guide_Of_Dead_Cap:100",
+		"C_Khalitzburg_Helm_BL:100",
+		"C_Khalitzburg_KN_Helm_W:100",
 		"C_Anubis_Helm_J:100",
 		"C_Black_Cat_Ears_Beret:100",
 		"C_Cowboy_Hat_B:100",
-		"C_Seraph_Wing_Helm:100",
 		"C_Chic_Peony:100",
+		"C_Seraph_Wing_Helm:100",
 		"C_Royal_Milk_Tea_Hat:100",
 		"C_Darkness_Helm:100",
 		"C_Magic_Helm:100",
@@ -412,17 +439,35 @@ OnInit:
 		"C_Evil_Scythe:100",
 		"C_Bloody_Murderer_Knife:100",
 		"C_GreatDevilWing:100",
-		"C_Loli_Ruri_Moon_B:100",
+		"C_Immortal_H_Spear:100",
 		"C_Big_Shuriken:100",
+		"C_Labrys:100",
+		"C_Dimensional_Sword:100",
+		"C_Lord_Of_Death_Shield:100",
+		"C_Loli_Ruri_Moon:100",
+		"C_Knights_Sword_Shield:100",
+		"C_Loli_Ruri_Moon_B:100",
+		"C_Arcanum_Corvus_Corax:100",
+		"C_Baphomet_Scythe:100",
+		"C_HDP_Scythe:100",
 		"C_Valkyrie_Wing:100",
+		"C_Baldr_Wing_TW:100",
+		"C_Sandalphon_Wing_TW:100",
+		"C_Wings_of_Gabriel:100",
+		"C_Mystical_Wing:100",
+		"C_Sakura_Wing:100",
+		"C_Amistr_Bag:100",
+		"C_White_Fox_Tail:100",
+		"C_Dark_Lord_Manteau:100",
 		"T_Archangel_Wing:100",
+		"C_BlueAngeling_Wing:100",
 		"C_Guardian_Angelwing:100",
 		"C_Wing_Of_Angel_Move_BK:100",
-		"C_BlueAngeling_Wing:100",
+		"C_Blue_Magpie:100",
 		"C_Wing_Of_Angel_Move_RD:100",
 		"Brilliant_Golden_Wings:100",
 		"C_Wing_Of_Happiness:100",
-		"C_Sandalphon_Wing_TW:100",
+		"C_Wing_Of_Angel_Move_GR:100",
 		"C_Round_Eyes:100",
 		"C_Blink_Eyes_Sakura:100",
 		"C_Black_Glasses:100",
@@ -441,20 +486,38 @@ OnInit:
 		"C_8Type_PurgatorialWing:100",
 		"C_Gangster_Patch:100",
 		"C_Fallen_Angel_Blessing:100",
+		"C_Tiger_BL:100",
+		"C_Snow_Fox_TW:100",
+		"C_Tiger_WH:100",
+		"C_Wanderer_Grim_Reaper:100",
+		"C_Seyren_Mini:100",
+		"C_Violet_Starlight:100",
+		"C_CLB_DT_TS_Mini:100",
+		"C_Helm_Of_Ra_KR:100",
+		"C_Serpent_Crystal:100",
 		"C_Mob_Scarf:100",
 		"C_Eremes_Scarf_Black:100",
 		"C_Ghost_Bat_J:100",
 		"C_Glastheim_Onlooker:100",
-		"C_Holy_Rosario:100",
 		"C_Antique_Pipe_J:100",
-		"C_Bubble_Gum_In_Mouth:100",
+		"C_Holy_Rosario:100",
 		"C_Miracle_Blue_Rose:100",
+		"C_Bubble_Gum_In_Mouth:100",
 		"C_Mask_Of_Orochimaru:100",
 		"C_Well_Baked_Toast:100",
+		"C_OneEyedJack:100",
+		"C_Ifrits_Breath:100",
+		"C_Vajra:100",
+		"C_Poring_Soap_Pipe:100",
+		"C_Cons_Of_Light_Dark:100",
+		"C_Worg_In_Mouth:100",
+		"C_Yesterday_Once_More:100",
+		"C_Cons_Of_Darkness:100",
+		"C_Pipe_Of_Jiraiya:100",
 		"C_Cat_Mouth:100",
 		"Lincoln_Beard:100",
-		"C_Cons_Of_Light_Dark:100",
 		"C_Fan_In_Mouth:100",
+		"C_Subject_Aura_Red:100",
 		"C_H_Knight_Cloak:100",
 		"C_SurviveOrb:100",
 		"C_Dark_Snake_Lord_Stall:100",
@@ -584,11 +647,14 @@ OnInit:
 	.@n = getarraysize(.@pool$);
 	freeloop(1); // 486 lines are more than the default loop guard allows
 	for (.@i = 0; .@i < .@n; .@i++) {
-		explode(.@part$, .@pool$[.@i], ":");
-		.@id = getiteminfo(.@part$[0], ITEMINFO_ID);
-		.@w = atoi(.@part$[1]);
+		.@entry$ = .@pool$[.@i];
+		.@pos = strpos(.@entry$, ":");
+		if (.@pos < 0) continue;
+		.@name$ = substr(.@entry$, 0, .@pos - 1);
+		.@id = getiteminfo(.@name$, ITEMINFO_ID);
+		.@w = atoi(substr(.@entry$, .@pos + 1, getstrlen(.@entry$) - 1));
 		if (.@id <= 0) {
-			debugmes "[Gacha] unknown item '" + .@part$[0] + "', skipped.";
+			debugmes "[Gacha] unknown item '" + .@name$ + "', skipped.";
 			continue;
 		}
 		if (.@w <= 0)
