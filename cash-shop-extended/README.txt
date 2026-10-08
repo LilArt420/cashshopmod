@@ -42,6 +42,12 @@ Open db/item_cash.yml. Each entry uses this format:
 
 The item value must be a valid rAthena AegisName.
 
+The client also needs to know the item's name, description and icon. Most
+items are in the client's own item table, but some iRO-only ones are not in
+kRO's, and show as "Unknown Item" there. System/itemInfo.lua supplies those.
+If you add an item that shows as unknown on a kRO client, add its entry there
+too, using the item's numeric ID (copy it from iRO's System/iteminfo.lub).
+
 Progress and storage
 --------------------
 Cash points and reward progress are account-wide and persist in the database.
