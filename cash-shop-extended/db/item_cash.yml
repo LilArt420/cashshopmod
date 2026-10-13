@@ -1032,6 +1032,12 @@ Body:
         Price: 100
       - Item: Mad_Bunny_Enchant_3_3
         Price: 75
+      - Item: EpisodClear13
+        Price: 50
+      - Item: EpisodClear14
+        Price: 50
+      - Item: EpisodClear15
+        Price: 50
       - Item: EpisodClear16
         Price: 50
       - Item: EpisodClear17
