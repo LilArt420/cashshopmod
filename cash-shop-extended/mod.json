@@ -1,6 +1,6 @@
 {
   "name": "cash-shop-extended",
-  "version": "2.8.1",
+  "version": "2.9.0",
   "author": "Lil Art",
   "description": "Adds a useful cash-shop catalog and configurable cash-point rewards for play time, monster kills and zeny exchange, along with gacha npcs.",
   "requires": {
