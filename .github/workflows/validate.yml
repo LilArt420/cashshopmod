@@ -86,10 +86,6 @@ jobs:
           repository: ${{ env.APP_REPO }}
           ref: ${{ steps.app.outputs.tag }}
           path: .app
-          sparse-checkout: |
-            stack
-            registry/mods
-            config
 
       - name: The app's manifest reader accepts mod.json
         env:
@@ -152,13 +148,6 @@ jobs:
           repository: ${{ env.APP_REPO }}
           ref: ${{ needs.mod.outputs.app_tag }}
           path: .app
-          sparse-checkout: |
-            /stack/
-            /config/
-            /scripts/
-            /third-party/population-engine/
-            /package.json
-          sparse-checkout-cone-mode: false
 
       - uses: actions/download-artifact@v4
         with:
