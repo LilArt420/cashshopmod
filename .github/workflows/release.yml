@@ -63,8 +63,10 @@ jobs:
 
       # Only the mod folder, so the zip has exactly one top-level folder with
       # mod.json inside it. The app refuses a zip with anything else at the top.
+      # LICENSE goes in with it.
       - name: Create Zip Archive
         run: |
+          cp LICENSE cash-shop-extended/
           zip -r "${{ steps.version.outputs.zip }}" cash-shop-extended -x '*.DS_Store' '*__MACOSX*'
           unzip -l "${{ steps.version.outputs.zip }}"
 

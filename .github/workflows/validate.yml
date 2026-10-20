@@ -103,6 +103,7 @@ jobs:
           VERSION: ${{ steps.manifest.outputs.version }}
         run: |
           zip="$NAME-v$VERSION.zip"
+          cp LICENSE cash-shop-extended/
           zip -q -r "$zip" cash-shop-extended -x '*.DS_Store' '*__MACOSX*'
           unzip -l "$zip"
           echo "ZIP=$zip" >> "$GITHUB_ENV"
