@@ -3,7 +3,7 @@
 A Ragnarok Offline mod that fills the Cash Shop and lets you earn Cash Points just by playing 💎 Renewal only.
 
 ## 🌟 What It Adds
-- 🛍️ **A full Cash Shop**: 552 scrolls, boxes, buffs and convenience items, all in one tab so every client shows them.
+- 🛍️ **A full Cash Shop**: 552 scrolls, boxes, buffs and convenience items, sorted into the shop's tabs: New, Popular, Limited Sale, Permanent Equipment, Scrolls, Consumables and Other.
 - 🎁 **A welcome gift**: 250 Cash Points the first time each account logs in.
 - ⏱️ **Points for play time**: 15 Cash Points for every 10 minutes online.
 - ⚔️ **Points for kills**: 15 Cash Points for every 100 monsters you defeat.

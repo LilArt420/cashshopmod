@@ -35,7 +35,10 @@ unlimited. Restart Ragnarok Offline after changing script settings.
 
 Shop items and prices
 ---------------------
-Open db/item_cash.yml. Each entry uses this format:
+Open db/item_cash.yml. Items are grouped by the tab they appear in
+(Tab: New, Hot, Limited, Rental, Permanent, Scrolls, Consumables or Other;
+Hot is the client's Popular tab). Avoid Tab: Sale, which rAthena only sells
+from while a sale is running. Each entry uses this format:
 
   - Item: Blessing_10_Scroll
     Price: 5
