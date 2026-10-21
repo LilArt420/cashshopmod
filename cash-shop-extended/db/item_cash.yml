@@ -1,5 +1,5 @@
 # Cash Shop catalog
-#
+# By: Lil Art
 # Item is the rAthena AegisName, not the numeric item ID.
 # Price is paid from the account variable #CASHPOINTS.
 #
@@ -42,18 +42,18 @@ Body:
         Price: 3
       - Item: SP_Increase_PotionL
         Price: 3
-      - Item: 24_S_Ev_Juice
-        Price: 5
-      - Item: E_All_In_One_Buff
-        Price: 5
-      - Item: G_Limit_Power_Booster
-        Price: 5
       - Item: Yggdrasil_Seed_Box
         Price: 25
       - Item: Abrasive
         Price: 5
       - Item: Iggdrasilberry_Box
         Price: 50
+      - Item: 24_S_Ev_Juice
+        Price: 5
+      - Item: E_All_In_One_Buff
+        Price: 5
+      - Item: G_Limit_Power_Booster
+        Price: 5
       - Item: Elemental_Fire
         Price: 5
       - Item: Gold
@@ -78,16 +78,16 @@ Body:
         Price: 15
       - Item: Max_Weight_Up_Scroll
         Price: 15
-      - Item: Battle_Manual_X3
-        Price: 25
       - Item: HE_Bubble_Gum
         Price: 15
-      - Item: Boarding_Halter
-        Price: 50
-      - Item: C_Wing_Of_Fly
-        Price: 1
+      - Item: Battle_Manual_X3
+        Price: 25
       - Item: Runstone_Lux
         Price: 15
+      - Item: C_Wing_Of_Fly
+        Price: 1
+      - Item: F_Giant_Fly_Wing_Box500
+        Price: 50
       - Item: EXPUP_Potion1Box
         Price: 50
       - Item: Etel_Topaz
@@ -113,17 +113,17 @@ Body:
       - Item: F_HD_Bradium_Box10
         Price: 1
       - Item: Enriched_Etherdeocon
-        Price: 3
+        Price: 1
       - Item: HD_Elunium_50Box
         Price: 5
       - Item: Blacksmith_Blessing
-        Price: 5
+        Price: 1
       - Item: HD_Oridecon_50Box
-        Price: 3
+        Price: 5
       - Item: F_Enriched_Elunium_Box
-        Price: 5
+        Price: 1
       - Item: F_HD_Carnium_Box10
-        Price: 5
+        Price: 1
       - Item: F_Enriched_Oridecon_Box
         Price: 1
       - Item: Guarantee_Armor_7Up
@@ -170,32 +170,32 @@ Body:
         Price: 50
       - Item: Great_Hero_Boots
         Price: 500
-      - Item: Hero_Favor
-        Price: 150
       - Item: Remodel_Hero_Boots
         Price: 50
+      - Item: Hero_Favor
+        Price: 150
       - Item: Hero_Weapon_Up_Box_4
         Price: 50
       - Item: Hero_Weapon_Up_Box_5
         Price: 50
       - Item: Hero_Weapon_Up_Box_6
         Price: 50
-      - Item: Up_Hero_Weapon_Box
-        Price: 25
-      - Item: Great_Hero_Bravery
-        Price: 15
-      - Item: Great_Hero_Wisdom
-        Price: 15
-      - Item: Neuralizer
-        Price: 50
       - Item: RWC_Scroll_2012
         Price: 5
+      - Item: Boarding_Halter
+        Price: 50
       - Item: RWC_2012_Set_Box
         Price: 150
-      - Item: Shadow_Refine_Hammer
+      - Item: Great_Hero_Bravery
+        Price: 15
+      - Item: Up_Hero_Weapon_Box
+        Price: 25
+      - Item: Great_Hero_Wisdom
         Price: 15
       - Item: Temporal_Manteau_Box
         Price: 50
+      - Item: Shadow_Refine_Hammer
+        Price: 15
       - Item: Temporal_Refine_Cube
         Price: 150
       - Item: Temporal_Armor_TW_LT
@@ -272,39 +272,39 @@ Body:
         Price: 50
       - Item: Star_Robe_Of_Spl
         Price: 150
-      - Item: Star_Robe_Of_Wis
-        Price: 150
       - Item: Star_Suit_Of_Crt
         Price: 150
-      - Item: Star_Armor_Of_Sta
+      - Item: Star_Robe_Of_Wis
         Price: 150
+      - Item: S_AllMighty_Earring
+        Price: 100
+      - Item: Nebula_Orb_US
+        Price: 500
+      - Item: S_AllMighty_Pendant
+        Price: 100
       - Item: Star_Armor_Of_Pow
         Price: 150
       - Item: Star_Suit_Of_Con
         Price: 150
-      - Item: AllMighty_Up
-        Price: 50
-      - Item: S_AllMighty_Earring
-        Price: 300
-      - Item: S_AllMighty_Pendant
-        Price: 300
+      - Item: Star_Armor_Of_Sta
+        Price: 150
       - Item: D_Glacier_Armor
         Price: 50
       - Item: D_Glacier_Robe
         Price: 50
       - Item: D_Glacier_Manteau
         Price: 50
+      - Item: EP20_DGA_Refine
+        Price: 50
+      - Item: Dimglacier_Follower_US
+        Price: 500
+      - Item: EP19_DGW_Refine
+        Price: 50
       - Item: D_Glacier_Muffler
         Price: 50
       - Item: D_Glacier_Boots
         Price: 50
       - Item: D_Glacier_Shoes
-        Price: 50
-      - Item: EP20_DGA_Refine
-        Price: 50
-      - Item: D_Glacier_Whip
-        Price: 50
-      - Item: EP19_DGW_Refine
         Price: 50
       - Item: Overwhelm_Int_Armor
         Price: 50
@@ -374,9 +374,9 @@ Body:
         Price: 500
       - Item: Baksojin_Hat_LT
         Price: 150
-      - Item: GoldFish_Hat_LT
-        Price: 150
       - Item: Gothic_HW_TW_LT
+        Price: 150
+      - Item: GoldFish_Hat_LT
         Price: 150
       - Item: Deepblue_Sunglasses_
         Price: 50
@@ -824,9 +824,9 @@ Body:
         Price: 150
       - Item: C_CLB_DT_TS_Mini
         Price: 150
-      - Item: C_Helm_Of_Ra_KR
-        Price: 150
       - Item: C_Serpent_Crystal
+        Price: 150
+      - Item: C_Helm_Of_Ra_KR
         Price: 150
       - Item: C_Mob_Scarf
         Price: 150
@@ -954,21 +954,21 @@ Body:
         Price: 500
       - Item: Shard_Jewelry_Vit
         Price: 500
-      - Item: Adamatine10
-        Price: 1500
       - Item: MasterArcher10
         Price: 1500
-      - Item: Acute10
+      - Item: Adamatine10
+        Price: 1500
+      - Item: Spell_Jewel_9
+        Price: 1500
+      - Item: Mettle10
         Price: 1500
       - Item: Corrupt_R_5
         Price: 250
-      - Item: Spell_Jewel_9
-        Price: 1500
       - Item: Affection10
         Price: 1500
-      - Item: Tenacity10
+      - Item: Acute10
         Price: 1500
-      - Item: Mettle10
+      - Item: Tenacity10
         Price: 1500
       - Item: MagicEessence10
         Price: 1500
@@ -1026,12 +1026,24 @@ Body:
         Price: 5000
       - Item: Glacier_F_Orb_49
         Price: 5000
-      - Item: Mad_Bunny_Enchant_3_4
-        Price: 75
-      - Item: FixedCasting05
-        Price: 100
-      - Item: Mad_Bunny_Enchant_3_3
-        Price: 75
+      - Item: PurpleStar_Foot_Robe
+        Price: 50
+      - Item: Nyar_Foot_BU
+        Price: 50
+      - Item: Divine_Light_Foot
+        Price: 50
+      - Item: PinkGlowEffect_Middle
+        Price: 50
+      - Item: Ghost_Effect
+        Price: 50
+      - Item: Twinkle_Effect
+        Price: 50
+      - Item: Butterfly_yellow_Foot
+        Price: 50
+      - Item: Blossom_Foot
+        Price: 50
+      - Item: Nyar_Foot_PP
+        Price: 50
       - Item: EpisodClear13
         Price: 50
       - Item: EpisodClear14
@@ -1044,11 +1056,29 @@ Body:
         Price: 50
       - Item: EpisodClear18
         Price: 50
+      - Item: EpisodClear19
+        Price: 50
+      - Item: EpisodClear20
+        Price: 50
+      - Item: EpisodClear21
+        Price: 50
+      - Item: Clothing_Dye_Coupon
+        Price: 15
+      - Item: Costume_Ticket
+        Price: 15
+      - Item: New_Style_Coupon
+        Price: 15
       - Item: Fortune3
         Price: 15
       - Item: Intellect3
         Price: 15
       - Item: Force3
+        Price: 15
+      - Item: Slot_Coupon
+        Price: 15
+      - Item: Inventory_Ex
+        Price: 15
+      - Item: P_Cart_C
         Price: 15
       - Item: Incubus_Egg
         Price: 50
@@ -1060,7 +1090,7 @@ Body:
         Price: 50
       - Item: Whisper_Egg
         Price: 50
-      - Item: Zherlthsh_Egg
+      - Item: Loli_Ruri_Egg
         Price: 50
       - Item: Dark_Priest_Egg
         Price: 50
@@ -1070,13 +1100,13 @@ Body:
         Price: 50
       - Item: Diabolic_Egg2
         Price: 50
-      - Item: High_Orc_Egg
+      - Item: Zherlthsh_Egg
         Price: 50
-      - Item: Wanderer_H_EGG
+      - Item: High_Orc_Egg
         Price: 50
       - Item: Ep17_2_C_Admin2_Egg
         Price: 50
-      - Item: Loli_Ruri_Egg
+      - Item: Wanderer_H_EGG
         Price: 50
       - Item: Ep17_2_C_Admin1_Egg
         Price: 50
@@ -1104,22 +1134,183 @@ Body:
         Price: 200
       - Item: Lasgand_Antiquity2
         Price: 200
+      - Item: Costama_Egg24
+        Price: 150
+      - Item: Costama_Egg28
+        Price: 150
+      - Item: Costama_Egg22
+        Price: 150
       - Item: K_Secret_Key
         Price: 15
       - Item: Main_Lucky_Box
         Price: 15
       - Item: Main_Lucky_Box_
         Price: 5
-      - Item: Costama_Egg28
-        Price: 150
-      - Item: Costama_Egg24
-        Price: 150
-      - Item: Costama_Egg21
-        Price: 150
       - Item: 2020_Goal_Gift_Box
         Price: 150
       - Item: E_Card_Pack
         Price: 15
-      - Item: Costama_Egg22
+      - Item: Costama_Egg21
         Price: 150
-
+      - Item: Balloon_Scroll
+        Price: 5
+      - Item: Mad_Bunny_Scroll
+        Price: 5
+      - Item: 2018_Sakura_Scroll
+        Price: 5
+      - Item: Summer_Scroll2
+        Price: 50
+      - Item: Gemi_Diadem_Scroll_Box
+        Price: 50
+      - Item: Patron_Scroll
+        Price: 50
+      - Item: Pope_Scroll
+        Price: 5
+      - Item: Amistr_Scroll
+        Price: 5
+      - Item: Happy_Balloon_Scroll
+        Price: 5
+      - Item: iRO_2016_Dec_Special
+        Price: 5
+      - Item: iRO_2017_Jan_Special
+        Price: 5
+      - Item: iRO_2017_SeptSpecial
+        Price: 5
+      - Item: iRO_2017_Feb_Special
+        Price: 5
+      - Item: iRO_2017_July_Ragcan
+        Price: 5
+      - Item: iRO_2017_Apr_Special
+        Price: 5
+      - Item: iRO_2017_OctSpecial
+        Price: 5
+      - Item: iRO_2017_NovSpecial_Box
+        Price: 5
+      - Item: iRO_17_Dec_Special_Box
+        Price: 5
+      - Item: iRO_2017_Dec_S_Box
+        Price: 5
+      - Item: 2018_Mar_Special_Box
+        Price: 5
+      - Item: 2018_Apr_Special_Box
+        Price: 5
+      - Item: iRO201805_Special_Box
+        Price: 5
+      - Item: iRO_2018_02_Special_Box
+        Price: 5
+      - Item: iRO_2018_6m_Special_Box
+        Price: 5
+      - Item: iRO_2018_7m_Special_Box
+        Price: 5
+      - Item: iRO_2018_8m_Special_Box
+        Price: 5
+      - Item: iRO_2018_9m_Special_Box
+        Price: 5
+      - Item: iRO_2018_Oct_S_Box
+        Price: 5
+      - Item: iRO_2018_Nov_S_Box
+        Price: 5
+      - Item: iRO_2018_Dec_S_Box
+        Price: 5
+      - Item: OCP46_12
+        Price: 75
+      - Item: OCP48_12
+        Price: 75
+      - Item: OCP51_12
+        Price: 75
+      - Item: 2019_Jan_USA_Oversea
+        Price: 5
+      - Item: 2019_Feb_USA_Oversea
+        Price: 5
+      - Item: 2019_Mar_USA_Oversee
+        Price: 5
+      - Item: OCP_May_2022
+        Price: 5
+      - Item: OCP_JUL_2022
+        Price: 5
+      - Item: OCP_Nov_2022
+        Price: 5
+      - Item: OCP_Dec_2022
+        Price: 5
+      - Item: OCP_FEB_2023
+        Price: 5
+      - Item: OCP_APR_2023
+        Price: 5
+      - Item: OCP_MAY_2023
+        Price: 5
+      - Item: OCP_JUN_2023
+        Price: 5
+      - Item: OCP_JUL_2023
+        Price: 5
+      - Item: OCP_AUG_2023
+        Price: 10
+      - Item: OCP_SEP_2023
+        Price: 10
+      - Item: OCP_OCT_2023
+        Price: 10
+      - Item: OCP_NOV_2023
+        Price: 10
+      - Item: OCP_DEC_2023
+        Price: 10
+      - Item: OCP_JAN_2024
+        Price: 10
+      - Item: OCP_MAR_2024
+        Price: 10
+      - Item: OCP_MAY_2024
+        Price: 10
+      - Item: OCP_JUN_2024
+        Price: 10
+      - Item: OCP_JUL_2024
+        Price: 15
+      - Item: OCP_AUG_2024
+        Price: 15
+      - Item: OCP_SEP_2024
+        Price: 15
+      - Item: OCP_OCT_2024
+        Price: 15
+      - Item: OCP_NOV_2024
+        Price: 15
+      - Item: OCP_DEC_2024
+        Price: 15
+      - Item: OCP_JAN_2025
+        Price: 15
+      - Item: OCP_FEB_2025
+        Price: 15
+      - Item: OCP_MAR_2025
+        Price: 15
+      - Item: OCP_APR_2025
+        Price: 20
+      - Item: OCP_MAY_2025
+        Price: 20
+      - Item: OCP_AUG_2025
+        Price: 20
+      - Item: OCP69_12
+        Price: 250
+      - Item: OCP70_12
+        Price: 250
+      - Item: OCP71_12
+        Price: 250
+      - Item: OCP_SEP_2025
+        Price: 20
+      - Item: OCP_OCT_2025
+        Price: 20
+      - Item: OCP_NOV_2025
+        Price: 20
+      - Item: OCP_DEC_2025
+        Price: 25
+      - Item: OCP_JAN_2026
+        Price: 25
+      - Item: OCP_FEB_2026
+        Price: 25
+      - Item: OCP_MAR_2026
+        Price: 25
+      - Item: OCP_APR_2026
+        Price: 25
+      - Item: OCP_MAY_2026
+        Price: 25
+      - Item: OCP_AUG_2026
+        Price: 25
+      - Item: OCP_SEP_2026
+        Price: 25
+      - Item: OCP_OCT_2026
+        Price: 25
