@@ -4606,4 +4606,88 @@ tbl = {
 		ClassNum = 0,
 		costume = false,
 	},
+	[1002187] = {
+		unidentifiedDisplayName = "Level 5 Weapon +13 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 5 Weapon +13 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 5 weapon^000000 to ^006400+13^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
+	[1002188] = {
+		unidentifiedDisplayName = "Level 2 Armor +13 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 2 Armor +13 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 2 armor^000000 to ^006400+13^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
+	[1002189] = {
+		unidentifiedDisplayName = "Level 5 Weapon +14 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 5 Weapon +14 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 5 weapon^000000 to ^006400+14^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
+	[1002190] = {
+		unidentifiedDisplayName = "Level 2 Armor +14 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 2 Armor +14 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 2 armor^000000 to ^006400+14^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
+	[1002191] = {
+		unidentifiedDisplayName = "Level 5 Weapon +15 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 5 Weapon +15 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 5 weapon^000000 to ^006400+15^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
+	[1002192] = {
+		unidentifiedDisplayName = "Level 2 Armor +15 Refine Ticket [ROS]",
+		unidentifiedResourceName = "Guarantee_5w2a_Ticket",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Level 2 Armor +15 Refine Ticket [ROS]",
+		identifiedResourceName = "Guarantee_5w2a_Ticket",
+		identifiedDescriptionName = {
+			"Refines an equipped ^006400level 2 armor^000000 to ^006400+15^000000 with no chance of failure. One use.",
+			"Use it at the ^8B4513Grade Refiner^000000 in Prontera (164, 166): \"Refine with a ticket\" (standart-npc mod).",
+			"Weight : ^7777770^000000",
+		},
+		slotCount = 0,
+		ClassNum = 0
+	},
 }

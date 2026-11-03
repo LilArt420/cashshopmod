@@ -1136,6 +1136,18 @@ Body:
         Price: 1000
       - Item: Guarantee_Weapon_15Up
         Price: 1500
+      - Item: Gu_5LvWeapon_13Up_ROS
+        Price: 800
+      - Item: Gu_5LvWeapon_14Up_ROS
+        Price: 1000
+      - Item: Gu_5LvWeapon_15Up_ROS
+        Price: 1500
+      - Item: Gu_2LvArmor_13Up_ROS
+        Price: 800
+      - Item: Gu_2LvArmor_14Up_ROS
+        Price: 1000
+      - Item: Gu_2LvArmor_15Up_ROS
+        Price: 1500
       - Item: TokenOfHonor
         Price: 1
       - Item: Swz_Honor_Token
